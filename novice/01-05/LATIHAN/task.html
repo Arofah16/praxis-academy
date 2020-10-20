@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS DI JAVASCRIPT INFO</title>
+</head>
+<body>
+    <SCript>
+        // let user = {};
+        //     user.nama = 'arofah';
+        //     user.email = 'arofah@gmail.com';
+        //     user.nama ='kirana';
+        // delete user.name;
+        // console.log(user);
+
+        // CARA MENAMBAH ARRAY 
+        let belanja ={
+            pisang:25000,
+            sayuran:30000,
+            snack:"tidak jadi"
+        };
+        let tambah= 0 ;
+        for(let total in belanja){
+            tambah += belanja[total];
+        }
+        // alert(tambah);
+
+        function daftarBelanja(obj){
+            for(let cek in obj){
+                if(typeof obj[cek]=='number')
+                obj[cek] *= 2;
+            }
+        }
+        daftarBelanja();
+    </SCript>
+    
+</body>
+</html>
