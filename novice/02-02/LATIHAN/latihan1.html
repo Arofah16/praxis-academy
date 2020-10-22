@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan kelas</title>
+</head>
+<body>
+    <script>
+        class polygon{                  //membuat kelas terlebih dahulu
+            constructor (panjang,lebar){
+                this.panjang = panjang;
+                this.lebar = lebar;
+            }
+            get luas(){                    //mengambil nilai dari poligon dan membuat fungsi baru
+                return this.luas1();
+            }
+            luas1(){
+                return this.lebar * this.panjang;
+            }
+
+        }
+        const persegiPanjang = new polygon(12,5);
+        console.log(persegiPanjang.luas);               //memanggil variabel kemudian kelas
+    </script>
+    
+</body>
+</html>
