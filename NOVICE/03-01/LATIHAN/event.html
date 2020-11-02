@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan menggunakan event ON CLICK </title>
+    <style>
+        div{
+            border: black solid;
+            background-color: cadetblue;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Silahkan di klik </h1>
+        <button id="sini" onclick="change()">masuk</button>
+        <p>pelajaran hari ini</p>
+        <ul>
+            <li>menggunakan add event listener</li>
+        </ul>
+    </div>
+ 
+<script>
+    const klik = document.getElementById("sini");
+    function change(){
+        klik.style.background = "green";
+
+    }
+    const p1 = document.querySelector("p");
+    p1.addEventListener("click",function() {
+       const ul = document.querySelector("ul");     //dipanggil parentnya terlebih dahulu
+       const libaru = document.createElement("li");
+       const tekslibaru = document.createTextNode("item baru");
+       libaru.appendChild(tekslibaru);
+       ul.appendChild(libaru);
+
+    }); 
+    
+</script>
+
+    
+</body>
+</html>

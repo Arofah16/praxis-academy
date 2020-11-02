@@ -1,6 +1,0 @@
-CARA MENGISTAL GIT
-1. Buka di browser git-scm.com
-2. kemudian pilih widows, disini karena saya mengunakan windows,tergantung OSnya 
-3. tunggu sebentar , kemudian install
-4. perintah next kita klik semua sampai pada perintah install
-5. git sudah siap digunakan
