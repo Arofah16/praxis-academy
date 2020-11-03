@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>belajar kondisi if</title>
+    </head>
+    <body>
+        <script>
+            // var beli = prompt("Belanja hari ini" , 10000);
+            // if ( beli  >= 100000){
+            //     document.write("<h1>SELAMAT ANDA MENDAPATKAN VOCHER BELANJA</h1>");
+            // }else{
+            //     document.write ("<h3>TERIMAKASIH ANDA SUDAH BELANJA</H3>");
+            // }
+            // if(kondisi){
+                // aksi untuk melakukan kondisi apabila bernilai true
+            // }
+            // ...  maka hasil akan keluar dari blk apabila hasilnya false
+            // let nilai = 70; //agar user dapat memasukkan suatu nilai sintak ini bisa dirubah dengan
+            // let nilai = prompt("masukkan nilai anda!")
+            // if(nilai >= 80){
+            //     alert("LULUS , Nilai Anda: "+nilai);
+            // }else{
+            //     alert("Anda REMIDI")
+            // }
+
+                var jmlSepeda = 7;
+                var sepedaBaru = 3;
+                
+                for(var noSepeda = 1; noSepeda<=jmlSepeda ; noSepeda++){
+
+                    if(noSepeda <= 3){
+                        console.log("Sepeda No. "+noSepeda+" adalah baru");
+
+                    }else if(noSepeda === 4 || noSepeda === 6){
+                        console.log("sepeda no: "+noSepeda+" dibengkel")
+                    }
+                    else{                                  //apabila akan ditambahkan satu buah kondisi lagi
+                        console.log("Sepeda No. "+noSepeda+" lama");
+                    }
+                }
+
+        </script>
+    </body>
+</html>
