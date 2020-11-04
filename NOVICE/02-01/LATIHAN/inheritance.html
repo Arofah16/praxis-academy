@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTOTYPE INHERITANCE</title>
+</head>
+<body>
+    <script>
+        let x = function (j){
+            this.i = 0 ;
+            this.j = j;                 //sebagai parent   
+        };
+            // this.getJ = function(){
+            //     return this.j;              //sebagai anak
+            x.prototype.getJ= function(){
+                return this.j;
+
+            };
+            // };
+        // };
+
+        let x1 = new x(1);
+        let x2 = new x(4);
+
+        // console.log(x1.getJ());
+        // console.log(x2.getJ());
+        console.log(x1.j);
+        console.log(x2.j);
+
+        //         //dibawah adalah objek yang tidak menggunakan prtotype
+        // let objek = {
+        //     atribut: "nilai atribut",
+        //     fungsi: function(){
+        //         return "nilai fungsi"
+        //     }
+        // }
+        // console.log(objek);
+
+        // //dibawah adalah objek yang berprotoype yg bisa digunakan untuk inheritence
+        // function objekt(){
+        //     this.atribut = "nilai atribut"
+        //     this.fungsi = function(){
+        //         return "nilai fungsi";
+        //     }
+        // }
+        // console.log(objekt);
+
+        // const objek = function(){}
+
+        // objek.prototype.atribut = function(){
+        //     return "nilai atribut"
+        // }
+        // const pewaris = function(){}
+
+        // // dibawah adalah yang disebut inheritence
+        // pewaris.prototype = new objek()
+
+        // pewaris.prototype.atributKhusus = function(){
+        //     return "nilai atribut khusus pewaris"
+        // }
+        // console.log(pewaris);
+
+
+    </script>
+    
+</body>
+</html>

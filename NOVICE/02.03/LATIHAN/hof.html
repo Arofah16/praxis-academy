@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan HOF function dalam javascript</title>
+</head>
+<body>
+    <script>
+        //penggunaan array.prototype.filter
+        const Ganjil = (angka)=>{               //membuat fungsi 
+            return angka % 2 === 0
+        }
+
+        const hasil = [1,2,3,4,5,6,7,8,9,10];       //membuat variabel yang isinya data yang akan disaring  
+        
+        const Ganjil1 = hasil.filter(Ganjil);         //membuat variabel untuk menempatkan (.filter)
+
+        console.log(Ganjil1);               //panggil nama variabel yang ada (.filter)nya
+
+
+        //penggunaan array.prototype.map
+
+        const capsLOOK = (kata)=>{
+            return kata[0].toUpperCase() + kata.slice(1,kata.lenght);
+        }
+
+        const kalimat = "namaku nur AROFAH";
+
+        const kalimat1 = kalimat.split('').map(capsLOOK);
+
+        console.log(kalimat1);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATIHAN 2 TENTANG INHERITANCE</title>
+</head>
+<body>
+    <script>
+       let Mahasiswa = {
+           fnama:"Nur " ,
+            lnama: "Arofah",
+           set namaPanjang(value){
+               [this.fnama,this.lnama] = value.split("");
+           },
+           get namaPanjang(){
+               return `${this.fnama} ${this.lnama}`;
+           }
+       };
+       let mimin = {
+           __proto__ :Mahasiswa,
+            ismimin: true
+       };
+       alert(mimin.namaPanjang);
+
+       mimin.namaPanjang ="KIRANA KHASANAH";      //NAMA TIDAK MUNCUL SEMUANYA
+
+       alert(mimin.namaPanjang);
+       alert(Mahasiswa.namaPanjang);
+       
+
+    </script>
+    
+</body>
+</html>
