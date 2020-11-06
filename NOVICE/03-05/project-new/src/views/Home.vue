@@ -2,10 +2,10 @@
   <div class="home">
     <h1>HALAMAN HOME</h1>
     <h2>{{num}}</h2>
-    <v-btn fab color="danger" @click="tambah"><v-icon>mdi-plus</v-icon></v-btn>
-  
-    
-
+    <!-- <v-btn @click="tambah"><v-icon>md-plus</v-icon></v-btn> -->
+    <v-btn fab dark color="indigo" @click="tambah">
+      <v-icon dark>mdi-plus</v-icon>
+    </v-btn>
   </div>
 </template>
 

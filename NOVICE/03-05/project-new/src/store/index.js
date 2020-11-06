@@ -5,8 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    num: 10,
-    nama: "AROFAH",
+    num: 10
   },
   mutations: {
     addAngka: function(state){

@@ -1,7 +1,7 @@
 <template>
   <!-- App.vue -->
   <v-app>
-    <v-app-bar app color="red">
+    <v-app-bar app  color="lightblue">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title>CONTENT</v-toolbar-title>
@@ -28,6 +28,7 @@
     </v-app-bar>
 
     <v-navigation-drawer app v-model="drawer" color="blue">
+      
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="title"> Application </v-list-item-title>
@@ -64,7 +65,7 @@
       <v-container fluid>
         <router-view></router-view>
         <v-row>
-          <v-col cols="4">
+          <!-- <v-col cols="4">
             <v-card class="pa-2"> First, but last </v-card>
           </v-col>
           <v-col>
@@ -72,7 +73,7 @@
           </v-col>
           <v-col cols="4">
             <v-card class="pa-2"> Third, but first </v-card>
-          </v-col>
+          </v-col> -->
 
           <!-- <v-col cols="12" sm="6" md="8">
               <v-card class="pa-2" outlined tile>
@@ -104,9 +105,8 @@
     <v-footer :padless="true">
       <v-card flat tile width="100%" class="red lighten-1 text-center">
         <v-card-text>
-          <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
+          <v-btn class="mx-4" icon>
             <v-icon size="24px">
-              {{ icon }}
             </v-icon>
           </v-btn>
         </v-card-text>
